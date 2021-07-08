@@ -1,14 +1,10 @@
 /* =======> Global Styles */
-
 /* Variables */
-
 :root {
   --light-blue: #7fb5bb;
   --dark-blue: #26555a;
-
   --light-blue-hover: #a7b9bb;
   --dark-blue-hover: #4a5557;
-
   --border-radius: 20px;
 }
 
@@ -32,6 +28,7 @@ body {
   background-color: rgba(0, 0, 0, 0.486);
   z-index: 5;
 }
+
 h1,
 h2,
 h3,
@@ -44,6 +41,7 @@ h6 {
 p {
   line-height: 1.6;
 }
+
 button {
   color: black;
   outline: none;
@@ -62,8 +60,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
-/* =======> Local Styles */
 
+/* =======> Local Styles */
 /* NAV */
 nav {
   position: sticky;
@@ -89,32 +87,36 @@ nav .content {
 nav ul {
   display: flex;
   align-items: center;
-  width: calc(100% - 175px);
+  flex-grow: 1;
 }
 
 nav .nav-links {
   font-size: 1.3rem;
   display: none;
-  column-gap: 25px;
   text-transform: uppercase;
   margin: 0 auto;
 }
+
+nav .nav-links a:not(:last-of-type) {
+  display: inline-block;
+  margin-right: 25px;
+}
+
 nav .nav-links-mobile {
   display: none;
 }
+
 nav.opened .nav-links-mobile {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   row-gap: 30px;
-
   background-color: rgba(0, 0, 0, 0.712);
   color: var(--light-blue);
   text-align: center;
@@ -135,14 +137,20 @@ nav .nav-links-mobile i {
 nav a:hover {
   color: var(--light-blue);
 }
+
 nav .nav-icons {
   margin-left: auto;
   font-size: 1.35rem;
   display: flex;
-  column-gap: 25px;
 }
+
 nav i {
   cursor: pointer;
+  margin-left: 25px;
+}
+
+nav .nav-icons i:first-of-type {
+  margin-left: 0;
 }
 
 nav .open {
@@ -165,9 +173,6 @@ nav.scrolled {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top 20% left 0;
-
-  width: 85%;
-  margin: 0 auto;
   color: white;
   position: relative;
 }
@@ -187,10 +192,12 @@ nav.scrolled {
   z-index: 6;
   font-size: 40px;
 }
+
 #order p:last-of-type {
   color: var(--dark-blue);
   margin: 25px 0;
 }
+
 #order button {
   display: block;
   background-color: var(--light-blue);
@@ -212,15 +219,15 @@ nav.scrolled {
   background-position: bottom 0 right 15%;
   background-repeat: no-repeat;
   background-size: cover;
-
   position: relative;
 }
 
 #membership .content {
   position: relative;
   z-index: 6;
-  padding: 35px 0;
+  padding: 35px 10px;
 }
+
 #membership p:first-of-type,
 #membership h2 {
   text-align: center;
@@ -231,9 +238,13 @@ nav.scrolled {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
   padding: 0 20px;
 }
+
+#membership .card:first-of-type {
+  margin-right: 20px;
+}
+
 #membership h3,
 #membership .membership-name {
   text-align: center;
@@ -260,6 +271,7 @@ nav.scrolled {
 
 #membership .card {
   width: 350px;
+  max-width: 100%;
   margin: 25px 0 0;
   background-color: rgba(255, 255, 255, 0.233);
   padding: 15px 20px 25px;
@@ -290,7 +302,6 @@ nav.scrolled {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
-
   position: relative;
 }
 
@@ -341,9 +352,11 @@ nav.scrolled {
   max-width: 100%;
   margin: 0 auto;
 }
+
 #contact p {
   margin: 15px 0 25px;
 }
+
 #contact input,
 #contact textarea {
   display: block;
@@ -413,6 +426,7 @@ nav.scrolled {
 #subscribe {
   text-align: center;
 }
+
 #subscribe > * {
   padding: 25px 20px;
 }
@@ -467,11 +481,13 @@ nav.scrolled {
   color: black;
   padding: 25px;
 }
+
 #subscribe .blue-bg .content {
   width: 600px;
   max-width: 100%;
   margin: 0 auto;
 }
+
 #subscribe .flex {
   width: 90%;
   margin: 20px auto 25px;
@@ -479,17 +495,19 @@ nav.scrolled {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 25px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
 }
 
 #subscribe .flex a:hover {
-  color: rgb(61, 60, 60);
+  color: #3d3c3c;
 }
 
 #subscribe .social-links {
   display: flex;
   justify-content: center;
 }
+
 #subscribe i {
   margin: 0 10px;
   width: 30px;
@@ -506,13 +524,25 @@ nav.scrolled {
   background-color: #6d6b6b;
 }
 
+@media (max-width: 779px) {
+  #membership .cards .card:first-of-type {
+    margin-right: 0;
+  }
+
+  #membership .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media (min-width: 665px) {
   nav .nav-links {
     display: flex;
   }
+
   nav .nav-icons {
     margin-left: 0;
   }
+
   nav .hamburger {
     display: none;
   }
@@ -521,3 +551,17 @@ nav.scrolled {
     display: none !important;
   }
 }
+@media (max-width: 351px) {
+  nav h1 {
+    font-size: 1.2rem;
+  }
+
+  .nav-icons i {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+
+  .nav-links-mobile a {
+    font-size: 1.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */
