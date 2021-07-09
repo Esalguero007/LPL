@@ -293,7 +293,7 @@ nav.scrolled {
 }
 
 #membership .card button:hover {
-  background-color: var(--light-blue-hover);
+  background-color: var(--light-blue-hover); 
 }
 
 /* Shop Section */
