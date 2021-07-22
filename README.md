@@ -1,2 +1,2 @@
 ## Responsive UI
-Simple UI using HTML/CSS and a tiny bit of JavaScript.
+La Pulguita Loca HOME/CONTACT/ABOUT pages
