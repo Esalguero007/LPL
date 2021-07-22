@@ -237,9 +237,6 @@ footer i:hover {
   background-color: #6d6b6b;
 }
 
-footer > * {
-  padding: 25px 20px;
-}
 footer {
   background-color: var(--light-blue);
   color: black;
