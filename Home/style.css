@@ -70,13 +70,14 @@ nav {
   height: 80px;
   background-color: var(--dark-blue);
   color: white;
-  padding: 0 20px;
+
   transition: background-color 0.4s ease-out, color 0.4s ease-out;
 }
 
 nav .content {
   height: 100%;
   width: 1200px;
+  padding: 0 20px;
   max-width: 100%;
   margin: 0 auto;
   display: flex;
@@ -178,17 +179,15 @@ nav.scrolled {
 }
 
 #order .content {
-  padding: 0 25px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
   position: relative;
   z-index: 6;
   min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 #order h2 {
-  margin-top: 15px;
   z-index: 6;
   font-size: 40px;
 }
@@ -203,9 +202,12 @@ nav.scrolled {
   background-color: var(--light-blue);
   width: 500px;
   min-height: 50px;
-  max-width: 100%;
-  margin: 0 auto;
-  z-index: 10;
+  max-width: 95%;
+
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #order button:hover {
@@ -293,7 +295,7 @@ nav.scrolled {
 }
 
 #membership .card button:hover {
-  background-color: var(--light-blue-hover); 
+  background-color: var(--light-blue-hover);
 }
 
 /* Shop Section */
@@ -393,18 +395,23 @@ nav.scrolled {
 /* Location Section */
 #location {
   background-color: var(--dark-blue);
-  padding: 25px 20px 45px;
+  padding: 25px 0 45px;
   color: white;
 }
 
 #location .content {
-  width: 700px;
-  max-width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 
 #location .map {
-  width: 100%;
+  width: 700px;
+  max-width: 100%;
   height: 300px;
 }
 
@@ -496,7 +503,7 @@ nav.scrolled {
   align-items: center;
   flex-wrap: wrap;
   -moz-column-gap: 25px;
-       column-gap: 25px;
+  column-gap: 25px;
 }
 
 #subscribe .flex a:hover {
@@ -564,4 +571,4 @@ nav.scrolled {
   .nav-links-mobile a {
     font-size: 1.8rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}

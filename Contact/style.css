@@ -69,13 +69,14 @@ nav {
   height: 80px;
   background-color: var(--dark-blue);
   color: white;
-  padding: 0 20px;
+
   transition: background-color 0.4s ease-out, color 0.4s ease-out;
 }
 
 nav .content {
   height: 100%;
   width: 1200px;
+  padding: 0 20px;
   max-width: 100%;
   margin: 0 auto;
   display: flex;
@@ -165,6 +166,105 @@ nav.scrolled {
   color: black;
 }
 
+/* Main */
+main {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+}
+main h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+main .col {
+  padding: 40px;
+}
+main .col:first-child {
+  flex: 0.55 1 400px;
+  background-color: white;
+  position: relative;
+}
+
+main .col:first-child .content {
+  z-index: 4;
+  position: relative;
+}
+
+main .office {
+  margin-top: 30px;
+}
+
+main .office h3 {
+  margin-bottom: 10px;
+}
+
+main .map-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+}
+
+main .map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+main .map-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.459);
+}
+
+main .col:last-child {
+  flex: 0.45 1 400px;
+  background-color: #58c7ff;
+  color: white;
+}
+
+main .col:first-child p {
+  color: rgba(0, 0, 0, 0.685);
+}
+main .col:last-child p {
+  color: rgba(255, 255, 255, 0.815);
+}
+
+main .email {
+  margin-top: 15px;
+  position: relative;
+  font-weight: bolder;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  transition: color 200ms linear;
+}
+
+main .email::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: background-color 200ms linear;
+}
+
+main .email:hover::after {
+  background-color: #26555a;
+}
+
+main .email:hover {
+  color: #26555a;
+}
+
 /* Footer */
 footer .flex {
   width: 90%;
@@ -233,5 +333,26 @@ footer .content {
 
   .nav-links-mobile {
     display: none !important;
+  }
+}
+
+@media (max-width: 800px) {
+  main .col {
+    flex-grow: 1 !important;
+  }
+}
+
+@media (max-width: 351px) {
+  nav h1 {
+    font-size: 1.2rem;
+  }
+
+  .nav-icons i {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+
+  .nav-links-mobile a {
+    font-size: 1.8rem;
   }
 }
