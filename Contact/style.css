@@ -181,11 +181,19 @@ main h1 {
 }
 main .col {
   padding: 40px;
+  word-break: break-all;
 }
 main .col:first-child {
-  flex: 0.55 1 400px;
+  flex-grow: 0.55;
+  flex-shrink: 1;
   background-color: white;
   position: relative;
+}
+main .col:last-child {
+  flex-grow: 0.45;
+  flex-shrink: 1;
+  background-color: #58c7ff;
+  color: white;
 }
 
 main .col:first-child .content {
@@ -225,15 +233,6 @@ main .map-container::after {
   background-color: rgba(255, 255, 255, 0.459);
 }
 
-main .col:last-child {
-  flex: 0.45 1 400px;
-  background-color: #58c7ff;
-  color: white;
-}
-
-main .col:first-child p {
-  color: rgba(0, 0, 0, 0.685);
-}
 main .col:last-child p {
   color: rgba(255, 255, 255, 0.815);
 }
@@ -253,7 +252,9 @@ main .email {
 main .email > * {
   max-width: 100%;
 }
-
+main .email p {
+  transition: color 200ms linear;
+}
 main .email::after {
   content: "";
   position: absolute;
@@ -269,7 +270,8 @@ main .email:hover::after {
   background-color: #26555a;
 }
 
-main .email:hover {
+main .email:hover,
+main .email:hover p {
   color: #26555a;
 }
 
@@ -322,7 +324,7 @@ footer .content {
   max-width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 800px) {
+@media (max-width: 806px) {
   main .col {
     flex-grow: 1 !important;
   }
