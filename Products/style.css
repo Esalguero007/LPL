@@ -148,7 +148,9 @@ nav .nav-icons {
   display: flex;
 }
 
-nav i {
+nav i,
+.nav-icons a {
+  display: inline-block;
   cursor: pointer;
   margin-left: 25px;
 }
@@ -302,13 +304,13 @@ footer .content {
     display: none !important;
   }
 }
-
 @media (max-width: 351px) {
   nav h1 {
     font-size: 1.2rem;
   }
 
-  .nav-icons i {
+  .nav-icons i,
+  .nav-icons a {
     margin-left: 10px;
     font-size: 1rem;
   }

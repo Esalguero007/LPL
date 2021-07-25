@@ -144,7 +144,9 @@ nav .nav-icons {
   display: flex;
 }
 
-nav i {
+nav i,
+.nav-icons a {
+  display: inline-block;
   cursor: pointer;
   margin-left: 25px;
 }
@@ -241,9 +243,15 @@ main .email {
   position: relative;
   font-weight: bolder;
   display: inline-flex;
+  max-width: 100%;
+  flex-wrap: wrap;
   align-items: center;
   gap: 15px;
   transition: color 200ms linear;
+}
+
+main .email > * {
+  max-width: 100%;
 }
 
 main .email::after {
@@ -314,7 +322,11 @@ footer .content {
   max-width: 100%;
   margin: 0 auto;
 }
-
+@media (max-width: 800px) {
+  main .col {
+    flex-grow: 1 !important;
+  }
+}
 @media (min-width: 665px) {
   nav .nav-links {
     display: flex;
@@ -332,19 +344,13 @@ footer .content {
     display: none !important;
   }
 }
-
-@media (max-width: 800px) {
-  main .col {
-    flex-grow: 1 !important;
-  }
-}
-
 @media (max-width: 351px) {
   nav h1 {
     font-size: 1.2rem;
   }
 
-  .nav-icons i {
+  .nav-icons i,
+  .nav-icons a {
     margin-left: 10px;
     font-size: 1rem;
   }
