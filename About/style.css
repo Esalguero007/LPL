@@ -78,12 +78,13 @@ nav {
 nav .content {
   height: 100%;
   width: 1200px;
-  max-width: 100%;
   padding: 0 20px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
 nav ul {
@@ -136,7 +137,8 @@ nav .nav-links-mobile i {
   top: 40px;
 }
 
-nav a:hover {
+nav a:hover,
+nav i:hover {
   color: var(--light-blue);
 }
 
@@ -144,17 +146,13 @@ nav .nav-icons {
   margin-left: auto;
   font-size: 1.35rem;
   display: flex;
+  gap: 25px;
 }
 
 nav i,
 .nav-icons a {
   display: inline-block;
   cursor: pointer;
-  margin-left: 25px;
-}
-
-nav .nav-icons i:first-of-type {
-  margin-left: 0;
 }
 
 nav .open {
@@ -170,6 +168,40 @@ nav.scrolled {
   color: black;
 }
 
+@media (min-width: 665px) {
+  nav .nav-links {
+    display: flex;
+  }
+
+  nav .nav-icons {
+    margin-left: 0;
+  }
+
+  nav .hamburger {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: none !important;
+  }
+}
+@media (max-width: 420px) {
+  nav h1 {
+    font-size: 1.2rem;
+  }
+
+  nav .nav-icons {
+    gap: 17px;
+  }
+  .nav-icons i,
+  .nav-icons a {
+    font-size: 1rem;
+  }
+
+  .nav-links-mobile a {
+    font-size: 1.8rem;
+  }
+}
 /* Main */
 main {
   min-height: calc(100vh - 80px);
@@ -250,37 +282,4 @@ footer .content {
   width: 600px;
   max-width: 100%;
   margin: 0 auto;
-}
-
-@media (min-width: 665px) {
-  nav .nav-links {
-    display: flex;
-  }
-
-  nav .nav-icons {
-    margin-left: 0;
-  }
-
-  nav .hamburger {
-    display: none;
-  }
-
-  .nav-links-mobile {
-    display: none !important;
-  }
-}
-@media (max-width: 351px) {
-  nav h1 {
-    font-size: 1.2rem;
-  }
-
-  .nav-icons i,
-  .nav-icons a {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
-
-  .nav-links-mobile a {
-    font-size: 1.8rem;
-  }
 }
