@@ -142,25 +142,16 @@ nav .nav-icons {
   margin-left: auto;
   font-size: 1.35rem;
   display: flex;
+  gap: 25px;
 }
 
-nav i,
-.nav-icons a {
+nav .nav-icons > * {
   display: inline-block;
   cursor: pointer;
-  margin-left: 25px;
 }
 
-nav .nav-icons i:first-of-type {
-  margin-left: 0;
-}
-
-nav .open {
+nav .nav-icons .open {
   margin-right: 0;
-}
-
-nav .open {
-  display: inline-block;
 }
 
 nav.scrolled {
@@ -351,8 +342,7 @@ footer .content {
     font-size: 1.2rem;
   }
 
-  .nav-icons i,
-  .nav-icons a {
+  .nav-icons > * {
     margin-left: 10px;
     font-size: 1rem;
   }
