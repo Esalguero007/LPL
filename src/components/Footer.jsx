@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
       <div className="content">
         <h3>La Pulguita Loca</h3>
         <div className="flex">
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
           <a href="/">Ordene Online</a>
           <a href="/">Reservaciones</a>
         </div>
