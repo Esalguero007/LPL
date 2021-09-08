@@ -1,36 +1,133 @@
 import { useEffect } from "react";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Button } from "react-bootstrap";
+import {
+  faEnvelope,
+  faMapMarkerAlt,
+  faPhoneVolume,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedinIn,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 const Contact = () => {
   useEffect(() => {
     document.title = "La Pulguita Loca | Contact";
+    window.scrollTo(0, 0);
   }, []);
   return (
-    <main className="contact">
-      <div className="col">
-        <div className="content">
-          <h1>We're here</h1>
-          <p>Flea Market with us!</p>
-        </div>
-
-        <div className="map-container">
-          <iframe
-            title="La pulguita location"
-            className="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.832383204518!2d-95.50116587075564!3d29.72461420701319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c3b4510a6b11%3A0x28fa0c2402acba1!2s3800%20Hillcroft%20St%2C%20Houston%2C%20TX%2077057%2C%20USA!5e0!3m2!1sen!2sma!4v1623431582453!5m2!1sen!2sma"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
+    <main className="contact-page">
+      <div className="hero-text">
+        <h1>Have some questions?</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae vitae,
+          debitis eos possimus mollitia dolorem velit id? Optio sunt dolores
+          odio nisi sint incidunt reiciendis.
+        </p>
       </div>
-      <div className="col">
-        <h1>Let's talk</h1>
-        <p>Share your excitement with us/ Comparte tu emocion con nosotros</p>
-        <a href="mailto:sales@lapulguitaloca.com" className="email">
-          <p>support@lapulguitaloca.com</p>
-          <FontAwesomeIcon icon={faArrowRight} />
-        </a>
+
+      <div className="row">
+        <div className="col">
+          <form action="">
+            <h2>Contact us</h2>
+            <div className="input-container">
+              <input type="text" placeholder="First name" name="firstname" />
+              <input type="text" placeholder="Last name" name="lastname" />
+            </div>
+            <div className="input-container">
+              <input type="tel" placeholder="Phone" name="phone" />
+              <input type="email" placeholder="Email" name="email" />
+            </div>
+            <textarea name="message" placeholder="Message"></textarea>
+            <Button
+              variant="success"
+              className="rounded-0 mt-3 py-3 px-4"
+              type="submit"
+            >
+              Send Message
+            </Button>
+          </form>
+        </div>
+        <div className="col2">
+          <h2>Request a call back</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus, quam!
+          </p>
+          <div className="contact-info">
+            <div className="container">
+              <div className="i">
+                <FontAwesomeIcon icon={faPhoneVolume} />
+              </div>
+
+              <a href="tel:+62896706255135">346-438-3569</a>
+            </div>
+            <div className="container">
+              <div className="i">
+                <FontAwesomeIcon icon={faEnvelope} />
+              </div>
+              <a href="mailto:support@lapulguitaloca.com">
+                support@lapulguitaloca.com
+              </a>
+            </div>
+            <div className="container">
+              <div className="i">
+                <FontAwesomeIcon icon={faMapMarkerAlt} />
+              </div>
+              <a
+                href="https://goo.gl/maps/nhSW9L1a8Y5tL7j4A"
+                target="_blank"
+                rel="noreferrer"
+              >
+                3800 Hillcroft Street Houston, TX 77057
+              </a>
+            </div>
+          </div>
+          <div className="social-links text-center text-lg-start">
+            <a
+              className="d-inline-block me-2"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="i">
+                <FontAwesomeIcon icon={faFacebookF} />
+              </div>
+            </a>
+            <a
+              className="d-inline-block mx-2"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="i">
+                <FontAwesomeIcon icon={faTwitter} />
+              </div>
+            </a>
+            <a
+              className="d-inline-block mx-2"
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="i">
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </div>
+            </a>
+            <a
+              className="d-inline-block ms-2"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="i">
+                <FontAwesomeIcon icon={faInstagram} />
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </main>
   );

@@ -6,7 +6,7 @@ import Pay from "./components/pages/Pay";
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import "./App.css";
+import "./css/App.css";
 
 function App() {
   return (

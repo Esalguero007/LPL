@@ -1,0 +1,19 @@
+// colors
+$mainOrange: #fe7250;
+$mainYellow: #ffbd59;
+$mainYellow-hover: rgba(255, 189, 89, 0.678);
+$green: #5cb85c;
+$green-hover: #449d44;
+$gradient: linear-gradient(
+  90deg,
+  rgb(253, 200, 48) 0%,
+  rgba(254, 114, 80, 1) 40%
+);
+
+@import "home";
+@import "about";
+@import "contact";
+@import "pay";
+@import "resets";
+@import "nav";
+@import "footer";
