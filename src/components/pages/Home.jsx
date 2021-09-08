@@ -127,7 +127,7 @@ const Home = () => {
               <p>
                 Follow Us:
                 <a
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/lapulguitaloca/"
                   target="_blank"
                   rel="noreferrer"
                   className="strong"
@@ -155,7 +155,7 @@ const Home = () => {
               <FontAwesomeIcon className="icon me-3" icon={faEnvelope} />
               <p>
                 <span>Email: </span>
-                example@gmail.com
+                sales@lapulguitaloca.com
               </p>
             </div>
             <Button className="rounded-0 mt-4" variant="success">
@@ -189,7 +189,7 @@ const Home = () => {
               <div className="subscribe-form">
                 <Form className="d-flex align-items-center flex-wrap">
                   <Form.Control
-                    placeholder="enter your email address"
+                    placeholder="email address"
                     type="email"
                   />
                   <Button type="submit" className="rounded-0" variant="success">
