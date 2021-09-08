@@ -19,8 +19,7 @@ const Footer = () => {
                 La Pulguita Loca
               </h6>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Suscipit cumque at minima commodi quam temporibus?
+              Ahora Etsamos Acceptando Applicaciones De Vendedores Nuevos
               </p>
             </div>
 
@@ -70,7 +69,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  3800 Hillcroft Street Houston, TX 77057
+                  3800 Hillcroft Ave Houston, TX 77057
                 </a>
               </p>
               <p>
@@ -81,7 +80,7 @@ const Footer = () => {
               </p>
               <p>
                 <FontAwesomeIcon className="me-3" icon={faPhone} />{" "}
-                <a href="tel:+62896706255135">346-438-3569</a>
+                <a href="tel:1-346-438-3569">346-438-3569</a>
               </p>
             </div>
           </div>
