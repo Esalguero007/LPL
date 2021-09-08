@@ -49,7 +49,7 @@ const Home = () => {
           <div className="cards d-flex flex-wrap justify-content-center mt-5">
             <div className="card d-flex flex-column">
               <div className="name-info text-center mb-3">
-                <h3>$50</h3>
+                <h3>$40</h3>
                 <p className="membership-name mb-0">X Dia</p>
               </div>
               <div className="flex-grow-1 d-flex flex-column justify-content-between">
