@@ -20,11 +20,9 @@ const Contact = () => {
   return (
     <main className="contact-page">
       <div className="hero-text">
-        <h1>Have some questions?</h1>
+        <h1>We'd love to hear from you</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae vitae,
-          debitis eos possimus mollitia dolorem velit id? Optio sunt dolores
-          odio nisi sint incidunt reiciendis.
+        Whether you have a question about pricing, trials, need more information, or anything else, our team is ready to answer all your questions
         </p>
       </div>
 
@@ -62,7 +60,7 @@ const Contact = () => {
                 <FontAwesomeIcon icon={faPhoneVolume} />
               </div>
 
-              <a href="tel:+62896706255135">346-438-3569</a>
+              <a href="tel:+1346-438-3569">346-438-3569</a>
             </div>
             <div className="container">
               <div className="i">
@@ -81,14 +79,14 @@ const Contact = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                3800 Hillcroft Street Houston, TX 77057
+                3800 Hillcroft Ave Houston, TX 77057
               </a>
             </div>
           </div>
           <div className="social-links text-center text-lg-start">
             <a
               className="d-inline-block me-2"
-              href="https://facebook.com"
+              href="https://facebook.com/lapulguitaloca/"
               target="_blank"
               rel="noreferrer"
             >
@@ -118,7 +116,7 @@ const Contact = () => {
             </a>
             <a
               className="d-inline-block ms-2"
-              href="https://instagram.com"
+              href="https://instagram.com/lapulguitaloca/"
               target="_blank"
               rel="noreferrer"
             >
