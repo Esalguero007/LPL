@@ -51,7 +51,7 @@ const Contact = () => {
         <div className="col2">
           <h2>Request a call back</h2>
           <p>
-       Hbalamos espanol para nuestra gente latina que estan interesados.
+       Habalamos espanol para nuestra gente latina que estan interesados.
     
           </p>
           <div className="contact-info">
