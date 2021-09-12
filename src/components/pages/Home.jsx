@@ -167,7 +167,7 @@ const Home = () => {
             <iframe
               title="La Pulguita Location"
               className="map"
-              src="https:"//www.google.com/maps/place/La+Pulgita+Loca/@29.7253391,-95.503823,17z/data=!4m13!1m7!3m6!1s0x8640c3b5b3cf8db7:0xf11eada67b4140e0!2s3800+Hillcroft+Ave,+Houston,+TX+77057!3b1!8m2!3d29.7253345!4d-95.5016343!3m4!1s0x8640c318d614614d:0x72792fbcbb6ec568!8m2!3d29.7246875!4d-95.501515"
+              src="https://www.google.com/maps/place/La+Pulgita+Loca/@29.7253391,-95.503823,17z/data=!4m13!1m7!3m6!1s0x8640c3b5b3cf8db7:0xf11eada67b4140e0!2s3800+Hillcroft+Ave,+Houston,+TX+77057!3b1!8m2!3d29.7253345!4d-95.5016343!3m4!1s0x8640c318d614614d:0x72792fbcbb6ec568!8m2!3d29.7246875!4d-95.501515"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
