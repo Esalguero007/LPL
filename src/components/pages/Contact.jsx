@@ -51,8 +51,8 @@ const Contact = () => {
         <div className="col2">
           <h2>Request a call back</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus, quam!
+       Hbalamos espanol para nuestra gente latina que estan interesados.
+    
           </p>
           <div className="contact-info">
             <div className="container">
